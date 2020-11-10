@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8f2fd159-f5bd-4906-b1f8-c503738d10c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../Docker/blog/docker-compose.yml " afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LICENSE-2.0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gopath.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/americanise/americanise.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/americanise/americanise_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/americanise/british-american.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/americanise/expected.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/americanise/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apachereport1/apachereport.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apachereport2/apachereport.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apachereport3/apachereport.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apachereport4/apachereport.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apachereport5/apachereport.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive_file_list/archive_file_list.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive_file_list_ans/archive_file_list.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdigits/0123456789.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdigits/bigdigits.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdigits/bigdigits_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdigits_ans/0123456789.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdigits_ans/bigdigits.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bigdigits_ans/bigdigits_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cgrep1/cgrep.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cgrep2/cgrep.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cgrep3/cgrep.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cgrep3/util_darwin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cgrep3/util_freebsd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cgrep3/util_linux.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cgrep3/util_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chap4_ans/chap4_ans.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common_prefix/common_prefix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contains/contains.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filter/filter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/findduplicates/findduplicates.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/font/font.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/font/font_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fuzzy/fuzzy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fuzzy/fuzzybool/fuzzybool.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fuzzy_immutable/fuzzybool/fuzzybool.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fuzzy_immutable/immutable_fuzzy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fuzzy_mutable/fuzzybool/fuzzybool.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fuzzy_mutable/mutable_fuzzy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fuzzy_value/fuzzy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fuzzy_value/fuzzybool/fuzzybool.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guess_separator/guess_separator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hello/hello.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagetag1/imagetag1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagetag2/imagetag2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/indent_sort/indent_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invoicedata/gob.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invoicedata/inv.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invoicedata/invoicedata.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invoicedata/invoices.gob.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invoicedata/jsn.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invoicedata/txt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invoicedata/xml.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invoicedata_ans/gob.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invoicedata_ans/inv.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invoicedata_ans/invoicedata.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invoicedata_ans/jsn.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invoicedata_ans/txt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/invoicedata_ans/xml.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linkcheck/linkcheck.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linkcheck/linkutil/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linkcheck/linkutil/index.links" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linkcheck/linkutil/linkutil.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linkcheck/linkutil/linkutil_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/m3u2pls/David-Bowie-Singles.m3u" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/m3u2pls/David-Bowie-Singles.pls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/m3u2pls/m3u2pls.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/m3u2pls/m3u2pls_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memoize/memoize.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordered_map/ordered_map.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oslice/oslice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oslice/oslice_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pack/pack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/palindrome/palindrome.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/palindrome_ans/palindrome.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pi_by_digits/pi_by_digits.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playlist/David-Bowie-Singles.m3u" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playlist/David-Bowie-Singles.pls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playlist/playlist.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/polar2cartesian/polar2cartesian.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qtrac.eu/omap/omap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qtrac.eu/omap/omap_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quadratic_ans1/quadratic.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quadratic_ans2/quadratic.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/safemap/safemap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/safemap/safemap_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/safeslice/safeslice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/safeslice/safeslice_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaper1/shaper1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaper1/shapes/shapes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaper2/shaper2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaper2/shapes/shapes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaper3/shaper3.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaper3/shapes/shapes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaper_ans1/shaper1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaper_ans1/shapes/shapes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaper_ans2/shaper2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaper_ans2/shapes/shapes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaper_ans3/shaper3.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaper_ans3/shapes/shapes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sizeimages1/sizeimages1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sizeimages2/sizeimages2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soundex/soundex-test-data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soundex/soundex.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stacker/stack/stack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stacker/stack/stack_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stacker/stacker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics/statistics.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics_ans/statistics.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics_nonstop/statistics.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistics_nonstop2/statistics.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpack/unpack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unpack_ans/unpack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utf16-to-utf8/utf-16-be.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utf16-to-utf8/utf-16-le.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utf16-to-utf8/utf16-to-utf8.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wordfrequency/wordfrequency.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../src/main/helloworld.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Git/相关命令.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Git/相关命令.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.15.1" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1k5N7S3rj4JYvYjNWbttvJbHFFy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable..is.expanded" value="false" />
+    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build stacker.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/stacker/stacker.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build stacker.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
