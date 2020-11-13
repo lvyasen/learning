@@ -5,130 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e38eec2a-a26f-4747-a051-b81d91802d7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Docker/blog/docker-compose.yml " afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/LICENSE-2.0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/gopath.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/americanise/americanise.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/americanise/americanise_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/americanise/british-american.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/americanise/expected.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/americanise/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/apachereport1/apachereport.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/apachereport2/apachereport.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/apachereport3/apachereport.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/apachereport4/apachereport.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/apachereport5/apachereport.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/archive_file_list/archive_file_list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/archive_file_list_ans/archive_file_list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/bigdigits/0123456789.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/bigdigits/bigdigits.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/bigdigits/bigdigits_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/bigdigits_ans/0123456789.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/bigdigits_ans/bigdigits.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/bigdigits_ans/bigdigits_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/cgrep1/cgrep.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/cgrep2/cgrep.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/cgrep3/cgrep.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/cgrep3/util_darwin.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/cgrep3/util_freebsd.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/cgrep3/util_linux.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/cgrep3/util_windows.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/chap4_ans/chap4_ans.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/common_prefix/common_prefix.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/contains/contains.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/filter/filter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/findduplicates/findduplicates.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/font/font.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/font/font_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/fuzzy/fuzzy.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/fuzzy/fuzzybool/fuzzybool.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/fuzzy_immutable/fuzzybool/fuzzybool.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/fuzzy_immutable/immutable_fuzzy.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/fuzzy_mutable/fuzzybool/fuzzybool.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/fuzzy_mutable/mutable_fuzzy.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/fuzzy_value/fuzzy.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/fuzzy_value/fuzzybool/fuzzybool.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/guess_separator/guess_separator.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/hello/hello.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/imagetag1/imagetag1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/imagetag2/imagetag2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/indent_sort/indent_sort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/invoicedata/gob.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/invoicedata/inv.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/invoicedata/invoicedata.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/invoicedata/invoices.gob.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/invoicedata/jsn.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/invoicedata/txt.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/invoicedata/xml.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/invoicedata_ans/gob.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/invoicedata_ans/inv.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/invoicedata_ans/invoicedata.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/invoicedata_ans/jsn.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/invoicedata_ans/txt.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/invoicedata_ans/xml.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/linkcheck/linkcheck.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/linkcheck/linkutil/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/linkcheck/linkutil/index.links" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/linkcheck/linkutil/linkutil.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/linkcheck/linkutil/linkutil_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/m3u2pls/David-Bowie-Singles.m3u" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/m3u2pls/David-Bowie-Singles.pls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/m3u2pls/m3u2pls.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/m3u2pls/m3u2pls_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/memoize/memoize.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/ordered_map/ordered_map.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/oslice/oslice.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/oslice/oslice_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/pack/pack.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/palindrome/palindrome.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/palindrome_ans/palindrome.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/pi_by_digits/pi_by_digits.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/playlist/David-Bowie-Singles.m3u" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/playlist/David-Bowie-Singles.pls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/playlist/playlist.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/polar2cartesian/polar2cartesian.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/qtrac.eu/omap/omap.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/qtrac.eu/omap/omap_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/quadratic_ans1/quadratic.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/quadratic_ans2/quadratic.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/safemap/safemap.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/safemap/safemap_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/safeslice/safeslice.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/safeslice/safeslice_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/shaper1/shaper1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/shaper1/shapes/shapes.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/shaper2/shaper2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/shaper2/shapes/shapes.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/shaper3/shaper3.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/shaper3/shapes/shapes.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/shaper_ans1/shaper1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/shaper_ans1/shapes/shapes.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/shaper_ans2/shaper2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/shaper_ans2/shapes/shapes.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/shaper_ans3/shaper3.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/shaper_ans3/shapes/shapes.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/sizeimages1/sizeimages1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/sizeimages2/sizeimages2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/soundex/soundex-test-data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/soundex/soundex.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/stacker/stack/stack.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/stacker/stack/stack_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/stacker/stacker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/statistics/statistics.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/statistics_ans/statistics.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/statistics_nonstop/statistics.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/statistics_nonstop2/statistics.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/unpack/unpack.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/unpack_ans/unpack.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/utf16-to-utf8/utf-16-be.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/utf16-to-utf8/utf-16-le.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/utf16-to-utf8/utf16-to-utf8.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/wordfrequency/wordfrequency.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/helloworld.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Git/相关命令.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Git/相关命令.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gobook-1.0/goeg/test/interface_test/interface_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/chapter1/channels/hellochannels.go" beforeDir="false" afterPath="$PROJECT_DIR$/code/chapter1/channels/hellochannels.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +23,7 @@
   </component>
   <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.15.1" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/code" />
   </component>
   <component name="GoLibraries">
     <option name="urls">
@@ -174,7 +53,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -184,36 +63,56 @@
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build stacker.go">
-    <configuration name="go build helloworld.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
+    <configuration name="go build hellochannels.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/main/helloworld.go" />
+      <filePath value="$PROJECT_DIR$/code/chapter1/channels/hellochannels.go" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build helloworld.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/helloworld.go" />
+      <filePath value="$PROJECT_DIR$/code/chapter3/dbdriver/main.go" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build stacker.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/gobook-1.0/goeg/src/stacker/stacker.go" />
+      <filePath value="$PROJECT_DIR$/code/chapter2/sample/main.go" />
       <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build statistics.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/gobook-1.0/goeg/src/statistics_walker/statistics.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestClient in interface_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go" />
+      <working_directory value="$PROJECT_DIR$/gobook-1.0/goeg/test/interface_test" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/gobook-1.0/goeg/test/interface_test/interface_test.go" />
+      <pattern value="^\QTestClient\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build stacker.go" />
-        <item itemvalue="Go Build.go build helloworld.go (1)" />
-        <item itemvalue="Go Build.go build helloworld.go" />
+        <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build hellochannels.go" />
+        <item itemvalue="Go Test.TestClient in interface_test.go" />
+        <item itemvalue="Go Build.go build statistics.go" />
       </list>
     </recent_temporary>
   </component>
@@ -232,5 +131,31 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/code/chapter1/channels/hellochannels.go</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/code/chapter1/channels/hellochannels.go</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/code/chapter1/channels/hellochannels.go</url>
+          <line>10</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/code/chapter1/channels/hellochannels.go</url>
+          <line>18</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

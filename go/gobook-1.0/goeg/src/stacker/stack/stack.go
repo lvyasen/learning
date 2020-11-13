@@ -15,7 +15,7 @@ package stack
 
 import "errors"
 
-type Stack []interface{}
+type Stack []interface{} // 声明该包是一个接口
 
 func (stack *Stack) Pop() (interface{}, error) {
     theStack := *stack
@@ -27,7 +27,7 @@ func (stack *Stack) Pop() (interface{}, error) {
     return x, nil
 }
 
-func (stack *Stack) Push(x interface{}) {
+func (stack *Stack) Push(x interface{}) { //使用引用方式修改值
     *stack = append(*stack, x)
 }
 

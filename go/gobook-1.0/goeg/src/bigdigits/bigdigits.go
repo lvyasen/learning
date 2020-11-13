@@ -21,6 +21,7 @@ import (
 )
 
 func main() {
+
     if len(os.Args) == 1 {
         fmt.Printf("usage: %s <whole-number>\n", filepath.Base(os.Args[0]))
         os.Exit(1)
