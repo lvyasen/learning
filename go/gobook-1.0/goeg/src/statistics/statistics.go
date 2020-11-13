@@ -36,15 +36,15 @@ const (
     anError    = `<p class="error">%s</p>`
 )
 
-type statistics struct {
+type statistics struct { //定义一个聚合类型结构体
     numbers []float64
     mean    float64
     median  float64
 }
 
 func main() {
-    http.HandleFunc("/", homePage)
-    if err := http.ListenAndServe(":9001", nil); err != nil {
+    http.HandleFunc("/", homePage) // 这里没有小括号
+    if err := http.ListenAndServe(":9001", nil); err != nil { // 实现一个http服务器
         log.Fatal("failed to start server", err)
     }
 }
@@ -95,7 +95,7 @@ func formatStats(stats statistics) string {
 
 func getStats(numbers []float64) (stats statistics) {
     stats.numbers = numbers
-    sort.Float64s(stats.numbers)
+    sort.Float64s(stats.numbers)// 升序排序
     stats.mean = sum(numbers) / float64(len(numbers))
     stats.median = median(numbers)
     return stats
