@@ -22,11 +22,12 @@ import (
 
 func main() {
 
+    // os.Args[0] 存放的是程序的名字 所以切片的长度至少为 1
     if len(os.Args) == 1 {
-        fmt.Printf("usage: %s <whole-number>\n", filepath.Base(os.Args[0]))
+        fmt.Printf("usage: %s <whole-number>\n", filepath.Base(os.Args[0])) // 接受 % 占位符
+        // filepath.Base() 返回输入路径的基础名就是文件名 无论这是一个顶级包还是
         os.Exit(1)
     }
-
     stringOfDigits := os.Args[1]
     for row := range bigDigits[0] {
         line := ""

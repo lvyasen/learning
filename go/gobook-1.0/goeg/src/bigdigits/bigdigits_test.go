@@ -17,12 +17,13 @@ import (
     "bytes"
     "io/ioutil"
     "log"
-    "os"
+    "os" // 提供
     "os/exec"
     "path/filepath"
     "testing"
 )
-
+// * 是指针
+// 函数和方法之外变量不能使用 :=
 func TestBigDigits(t *testing.T) {
     log.SetFlags(0)
     log.Println("TEST bigdigits")

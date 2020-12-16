@@ -20,12 +20,12 @@ import (
 )
 
 func main() {
-	var haystack stack.Stack // 声明函数类型变量
+	var haystack stack.Stack // 声明函数类型变量 改变量是自定义的变量类型 该变量类型是 interface
 	haystack.Push("hay")
 	haystack.Push(-15)
 	haystack.Push([]string{"pin", "clip", "needle"})
 	haystack.Push(81.52)
-	for {
+	for { // 这里边的 for 是无线循环 同其他语言的while 跳出循环使用 break 或者 return
 		item, err := haystack.Pop()
 		if err != nil {
 			break
