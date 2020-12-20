@@ -14,7 +14,7 @@
 package main
 
 import (
-	"bufio"
+	"bufio" // 提供了针对字符和字符串的缓冲机制,因此很适合读写 UTF-8 编码的文件
 	"fmt"
 	"io"        // 包含了底层的I/O功能
 	"io/ioutil" // ioutil 是 io 的子集 提供了高级文件处理函数
@@ -95,7 +95,7 @@ func filenamesFromCommandLine() (inFilename, outFilename string,
 
  */
 func americanise(inFile io.Reader, outFile io.Writer) (err error) {
-	reader := bufio.NewReader(inFile)
+	reader := bufio.NewReader(inFile) // 只需要实现 io.Reader 接口就能得到一个带有缓冲的 reader
 	writer := bufio.NewWriter(outFile)
 	defer func() {
 		if err == nil {

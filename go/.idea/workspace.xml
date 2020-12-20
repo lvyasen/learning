@@ -3,11 +3,19 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e38eec2a-a26f-4747-a051-b81d91802d7f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Docker/docker-composer/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Docker/docker-composer/php7/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code" beforeDir="false" afterPath="$PROJECT_DIR$/code" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gobook-1.0/goeg/src/americanise/americanise.go" beforeDir="false" afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/americanise/americanise.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gobook-1.0/goeg/src/stacker/stack/stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/gobook-1.0/goeg/src/stacker/stack/stack.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
