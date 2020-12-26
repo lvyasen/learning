@@ -43,9 +43,9 @@ type statistics struct { //定义一个聚合类型结构体
 }
 
 func main() {
-    http.HandleFunc("/", homePage) // 这里没有小括号
-    if err := http.ListenAndServe(":9001", nil); err != nil { // 实现一个http服务器
-        log.Fatal("failed to start server", err)
+    http.HandleFunc("/", homePage) // 创建一个 http 服务器
+    if err := http.ListenAndServe(":9001", nil); err != nil { // 实现一个http服务器 如果有错误信息打印出日志
+        log.Fatal("failed to start server", err) //打印日志
     }
 }
 
