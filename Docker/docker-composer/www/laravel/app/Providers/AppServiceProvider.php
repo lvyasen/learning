@@ -2,17 +2,21 @@
 
 namespace App\Providers;
 
+<<<<<<< HEAD
 use App\Article;
 use App\Discussion;
 use App\Tools\FileManager\BaseManager;
 use App\Tools\FileManager\UpyunManager;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Facades\Schema;
+=======
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
     /**
+<<<<<<< HEAD
      * Bootstrap any application services.
      *
      * @return void
@@ -46,5 +50,24 @@ class AppServiceProvider extends ServiceProvider
 
             return new BaseManager();
         });
+=======
+     * Register any application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }
+
+    /**
+     * Bootstrap any application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        //
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
     }
 }

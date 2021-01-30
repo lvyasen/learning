@@ -8,6 +8,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Here you may specify the default filesystem disk that should be used
+<<<<<<< HEAD
     | by the framework. A "local" driver, as well as a variety of cloud
     | based drivers are available for your choosing. Just store away!
     |
@@ -29,6 +30,14 @@ return [
     */
 
     'cloud' => env('FILESYSTEM_CLOUD', 's3'),
+=======
+    | by the framework. The "local" disk, as well as a variety of cloud
+    | based disks are available to your application. Just store away!
+    |
+    */
+
+    'default' => env('FILESYSTEM_DRIVER', 'local'),
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
 
     /*
     |--------------------------------------------------------------------------
@@ -39,6 +48,11 @@ return [
     | may even configure multiple disks of the same driver. Defaults have
     | been setup for each driver as an example of the required options.
     |
+<<<<<<< HEAD
+=======
+    | Supported Drivers: "local", "ftp", "sftp", "s3"
+    |
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
     */
 
     'disks' => [
@@ -65,6 +79,7 @@ return [
             'endpoint' => env('AWS_ENDPOINT'),
         ],
 
+<<<<<<< HEAD
         'upyun' => [
             'driver'        => 'upyun',
             'bucket'        => env('UPYUN_BUCKET'),
@@ -74,6 +89,8 @@ return [
             'protocol'      => env('UPYUN_PROTOCOL'),
         ],
 
+=======
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
     ],
 
     /*

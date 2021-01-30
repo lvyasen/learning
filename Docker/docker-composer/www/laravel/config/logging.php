@@ -44,13 +44,21 @@ return [
         'single' => [
             'driver' => 'single',
             'path' => storage_path('logs/laravel.log'),
+<<<<<<< HEAD
             'level' => 'debug',
+=======
+            'level' => env('LOG_LEVEL', 'debug'),
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
         ],
 
         'daily' => [
             'driver' => 'daily',
             'path' => storage_path('logs/laravel.log'),
+<<<<<<< HEAD
             'level' => 'debug',
+=======
+            'level' => env('LOG_LEVEL', 'debug'),
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
             'days' => 14,
         ],
 
@@ -59,12 +67,20 @@ return [
             'url' => env('LOG_SLACK_WEBHOOK_URL'),
             'username' => 'Laravel Log',
             'emoji' => ':boom:',
+<<<<<<< HEAD
             'level' => 'critical',
+=======
+            'level' => env('LOG_LEVEL', 'critical'),
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
         ],
 
         'papertrail' => [
             'driver' => 'monolog',
+<<<<<<< HEAD
             'level' => 'debug',
+=======
+            'level' => env('LOG_LEVEL', 'debug'),
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
             'handler' => SyslogUdpHandler::class,
             'handler_with' => [
                 'host' => env('PAPERTRAIL_URL'),
@@ -83,12 +99,20 @@ return [
 
         'syslog' => [
             'driver' => 'syslog',
+<<<<<<< HEAD
             'level' => 'debug',
+=======
+            'level' => env('LOG_LEVEL', 'debug'),
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
         ],
 
         'errorlog' => [
             'driver' => 'errorlog',
+<<<<<<< HEAD
             'level' => 'debug',
+=======
+            'level' => env('LOG_LEVEL', 'debug'),
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
         ],
 
         'null' => [
@@ -101,4 +125,8 @@ return [
         ],
     ],
 
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8

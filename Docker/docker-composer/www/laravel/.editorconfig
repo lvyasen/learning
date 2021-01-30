@@ -1,6 +1,7 @@
 root = true
 
 [*]
+<<<<<<< HEAD
 indent_style = space
 indent_size = 4
 end_of_line = lf
@@ -14,7 +15,20 @@ indent_style = space
 indent_size = 2
 end_of_line = lf
 insert_final_newline = true
+=======
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
 trim_trailing_whitespace = true
 
 [*.md]
 trim_trailing_whitespace = false
+<<<<<<< HEAD
+=======
+
+[*.{yml,yaml}]
+indent_size = 2
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8

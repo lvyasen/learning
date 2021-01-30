@@ -2,9 +2,12 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+<<<<<<< HEAD
     <mapping directory="$PROJECT_DIR$/Docker/docker-composer/www/blog" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Docker/docker-composer/www/laravel" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Docker/docker-composer/www/laravel-blog" vcs="Git" />
+=======
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
     <mapping directory="$PROJECT_DIR$/go/code" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/go/go_learning" vcs="Git" />
   </component>

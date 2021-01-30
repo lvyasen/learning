@@ -11,11 +11,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede0711c-13fa-4881-828d-e26803b5fc64" name="Default Changelist" comment="面向对象">
+<<<<<<< HEAD
+=======
+      <change afterPath="$PROJECT_DIR$/Docker/docker-composer/nginx/conf.d/default.conf.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Docker/docker-composer/php/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Docker/docker-composer/www/swoole/tcpServer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Docker/docker-composer/www/swoole/webSocket.php" afterDir="false" />
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
       <change afterPath="$PROJECT_DIR$/go/go_learning/test/ch8/map/map_ext_test.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/go/go_learning/test/ch9/string/string_test.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/go/go_learning/test/err/err_test.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/go/go_learning/test/extension/pet_test.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/go/go_learning/test/fun/fun_test.go" afterDir="false" />
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/go/go_learning/test/groutine/groutine_test.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/go/go_learning/test/groutine/share_test.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/go/go_learning/test/interface/interface_test.go" afterDir="false" />
@@ -27,6 +35,28 @@
       <change beforePath="$PROJECT_DIR$/go/code/chapter2/sample/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/code/chapter2/sample/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go/code/chapter2/sample/matchers/rss.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/code/chapter2/sample/matchers/rss.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go/code/chapter2/sample/search/feed.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/code/chapter2/sample/search/feed.go" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/go/go_learning/test/interface/interface_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/go_learning/test/map/map_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/go_learning/test/string/string_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/php7新特性.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面向对象/创建型/单例模式.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面向对象/创建型/工厂方法.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面向对象/创建型/抽象工厂.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面向对象/创建型/简单工厂.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面向对象/结构型/依赖注入模式.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面向对象/结构型/适配器模式.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面向对象/结构型/门面模式.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/docker-composer/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docker-composer/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docker/docker-composer/php7/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Docker/docker-composer/nginx/conf.d/defaulu.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/go/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/code/chapter2/sample/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/code/chapter2/sample/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/code/chapter2/sample/matchers/rss.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/code/chapter2/sample/matchers/rss.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/code/chapter2/sample/search/feed.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/code/chapter2/sample/search/feed.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/分析的指标维度.md" beforeDir="false" />
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +94,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Docker/docker-composer/www/laravel" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -141,8 +175,13 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Docker.docker-composer: Compose Deployment" />
         <item itemvalue="Docker.docker-composer.nginx: Compose Deployment" />
+=======
+        <item itemvalue="Docker.docker-composer.nginx: Compose Deployment" />
+        <item itemvalue="Docker.docker-composer: Compose Deployment" />
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
         <item itemvalue="Docker.docker-composer.php: Compose Deployment" />
         <item itemvalue="Docker.docker-composer: Compose Deployment" />
         <item itemvalue="Docker.php/Dockerfile" />
@@ -168,7 +207,11 @@
       <workItem from="1603967992776" duration="1068000" />
       <workItem from="1607777793660" duration="105000" />
       <workItem from="1611464181823" duration="4459000" />
+<<<<<<< HEAD
       <workItem from="1611545869992" duration="38481000" />
+=======
+      <workItem from="1611545869992" duration="34461000" />
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
     </task>
     <task id="LOCAL-00001" summary="git 文件配置">
       <created>1599810062842</created>

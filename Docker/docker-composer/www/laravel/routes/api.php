@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 Route::group([
     'middleware' => ['auth:api', 'admin'],
     'namespace' => 'Api',
@@ -91,4 +92,22 @@ Route::group([
     Route::delete('comments/{id}', 'CommentController@destroy')->middleware('auth:api');
     Route::post('comments/vote/{type}', 'MeController@postVoteComment')->middleware('auth:api');
     Route::get('tags', 'TagController@getList');
+=======
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| API Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register API routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| is assigned the "api" middleware group. Enjoy building your API!
+|
+*/
+
+Route::middleware('auth:api')->get('/user', function (Request $request) {
+    return $request->user();
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
 });

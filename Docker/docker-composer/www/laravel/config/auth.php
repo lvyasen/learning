@@ -42,8 +42,14 @@ return [
         ],
 
         'api' => [
+<<<<<<< HEAD
             'driver' => 'passport',
             'provider' => 'users',
+=======
+            'driver' => 'token',
+            'provider' => 'users',
+            'hash' => false,
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
         ],
     ],
 
@@ -67,7 +73,11 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
+<<<<<<< HEAD
             'model' => App\User::class,
+=======
+            'model' => App\Models\User::class,
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
         ],
 
         // 'users' => [
@@ -81,10 +91,13 @@ return [
     | Resetting Passwords
     |--------------------------------------------------------------------------
     |
+<<<<<<< HEAD
     | Here you may set the options for resetting passwords including the view
     | that is your password reset e-mail. You may also set the name of the
     | table that maintains all of the reset tokens for your application.
     |
+=======
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
     | You may specify multiple password reset configurations if you have more
     | than one user table or model in the application and you want to have
     | separate password reset settings based on the specific user types.

@@ -1,6 +1,11 @@
 #!/usr/bin/env php
 <?php
 
+<<<<<<< HEAD
+=======
+define('LARAVEL_START', microtime(true));
+
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -13,7 +18,11 @@
 |
 */
 
+<<<<<<< HEAD
 require __DIR__.'/bootstrap/autoload.php';
+=======
+require __DIR__.'/vendor/autoload.php';
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
 
 $app = require_once __DIR__.'/bootstrap/app.php';
 
@@ -40,7 +49,11 @@ $status = $kernel->handle(
 | Shutdown The Application
 |--------------------------------------------------------------------------
 |
+<<<<<<< HEAD
 | Once Artisan has finished running. We will fire off the shutdown events
+=======
+| Once Artisan has finished running, we will fire off the shutdown events
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
 | so that any final work may be done by the application before we shut
 | down the process. This is the last thing to happen to the request.
 |

@@ -2,24 +2,37 @@
 
 namespace App\Exceptions;
 
+<<<<<<< HEAD
 use Throwable;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+=======
+use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Throwable;
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
 
 class Handler extends ExceptionHandler
 {
     /**
+<<<<<<< HEAD
      * A list of the exception types that should not be reported.
+=======
+     * A list of the exception types that are not reported.
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
      *
      * @var array
      */
     protected $dontReport = [
+<<<<<<< HEAD
         \Illuminate\Auth\AuthenticationException::class,
         \Illuminate\Auth\Access\AuthorizationException::class,
         \Symfony\Component\HttpKernel\Exception\HttpException::class,
         \Illuminate\Database\Eloquent\ModelNotFoundException::class,
         \Illuminate\Session\TokenMismatchException::class,
         \Illuminate\Validation\ValidationException::class,
+=======
+        //
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
     ];
 
     /**
@@ -33,6 +46,7 @@ class Handler extends ExceptionHandler
     ];
 
     /**
+<<<<<<< HEAD
      * Report or log an exception.
      *
      * @param  \Throwable  $exception
@@ -74,5 +88,16 @@ class Handler extends ExceptionHandler
         }
 
         return redirect()->guest('login');
+=======
+     * Register the exception handling callbacks for the application.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->reportable(function (Throwable $e) {
+            //
+        });
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
     }
 }

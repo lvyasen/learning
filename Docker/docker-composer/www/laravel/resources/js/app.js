@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * First we will load all of this project's JavaScript dependencies which
  * include Vue and Vue Resource. This gives a great starting point for
@@ -60,3 +61,6 @@ new Vue({
     i18n,
     render: (h) => h(App)
 }).$mount('#app')
+=======
+require('./bootstrap');
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8

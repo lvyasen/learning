@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 // User Auth
 Auth::routes();
 Route::post('password/change', 'UserController@changePassword')->middleware('auth');
@@ -70,3 +71,21 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['auth', 'admin']], funct
 // Article
 Route::get('/', 'ArticleController@index');
 Route::get('{slug}', 'ArticleController@show');
+=======
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('welcome');
+});
+>>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
