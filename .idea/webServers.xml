@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="27df69f1-8a45-4fd8-a5a5-036752cb1691" name="dc" url="http://localhost">
+        <fileTransfer mountedRoot="$PROJECT_DIR$/Docker/docker-composer/www/laravel" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

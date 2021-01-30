@@ -1,15 +1,39 @@
-version: "3.9"
+version: "3.0"
+networks:
+  lnmp-net:
+    driver: bridge
 services:
-  web:
-    build: .
+  nginx:
+    container_name: nginx
+    image: nginx
     ports:
-      - "5000:5000"
+     - 80:80
+     - 443:443
     volumes:
-      - .:/code
-      - logvolume01:/var/log
-    links:
+      - ./www:/usr/share/nginx/html
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/logs:/var/log/nginx
+    depends_on:
       - redis
+      - php
+    restart: always
+    networks:
+      - lnmp-net
+  php:
+    container_name: swoole_php
+    image: swoole_php7
+    volumes:
+      - ./www:/usr/share/nginx/html
+    restart: always
+    ports:
+    - 9000:9000
+    networks:
+      - lnmp-net
   redis:
+    container_name: redis
     image: redis
-volumes:
-  logvolume01: {}
+    ports:
+      - 6379:6379
+    restart: always
+    networks:
+      - lnmp-net
