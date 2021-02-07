@@ -9,10 +9,10 @@ networks:
 services:
   php:
     container_name: swoole_php
-#    image: swoole_php
-    build:
-      context: ./php
-      dockerfile: ./Dockerfile
+    image: swoole_php
+#    build:
+#      context: ./php
+#      dockerfile: ./Dockerfile
     volumes:
       - ./www:/www
     restart: always

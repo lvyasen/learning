@@ -26,4 +26,4 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 ENV PATH $COMPOSER_HOME/vendor/bin:$PATH
 
 WORKDIR /data
-CMD ["./start.sh"]
+#CMD ["./start.sh"]
