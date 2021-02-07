@@ -109,7 +109,7 @@ services:
     image: haproxy:1.7-alpine
     container_name: haproxy
     ports:
-      - 80:6301
+      - 81:6301
     volumes:
       - ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
     networks:
