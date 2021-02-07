@@ -8,7 +8,7 @@ networks:
 #    driver: bridge
 services:
     contaiphp:
-ner_name: swoole_php
+    container_name: swoole_php
     image: swoole_php
 #    build:
 #      context: ./php
