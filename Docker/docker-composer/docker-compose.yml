@@ -21,15 +21,6 @@ ner_name: swoole_php
     networks:
       static-network:
         ipv4_address: 172.20.129.2
-#  redis:
-#    container_name: redis
-#    image: redis
-#    ports:
-#      - 6379:6379
-#    restart: always
-#    networks:
-#      static-network:
-#        ipv4_address: 172.20.129.3
   nginx_master:
     container_name: nginx_master
     build:
