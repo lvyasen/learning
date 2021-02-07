@@ -7,7 +7,7 @@ networks:
 #  lnmp-net:
 #    driver: bridge
 services:
-    contaiphp:
+  php:
     container_name: swoole_php
     image: swoole_php
 #    build:
@@ -21,6 +21,15 @@ services:
     networks:
       static-network:
         ipv4_address: 172.20.129.2
+  redis:
+    container_name: redis
+    image: redis
+    ports:
+      - 6379:6379
+    restart: always
+    networks:
+      static-network:
+        ipv4_address: 172.20.129.3
   nginx_master:
     container_name: nginx_master
     build:
@@ -31,7 +40,7 @@ services:
       - ./nginx/proxy/conf.d:/etc/nginx/conf.d
       - ./nginx/proxy/logs/master:/var/log/nginx
     depends_on:
-
+      - redis
       - php
     restart: always
     networks:
@@ -52,7 +61,7 @@ services:
       - ./nginx/proxy/conf.d:/etc/nginx/conf.d
       - ./nginx/proxy/logs/slave:/var/log/nginx
     depends_on:
-
+      - redis
       - php
     networks:
       static-network:
@@ -74,7 +83,7 @@ services:
     cap_add:
       - NET_ADMIN
     depends_on:
-
+      - redis
       - php
   nginx_web_2:
     container_name: nginx_web_2
@@ -91,7 +100,7 @@ services:
     cap_add:
       - NET_ADMIN
     depends_on:
-
+      - redis
       - php
   nginx_web_3:
     container_name: nginx_web_3
@@ -108,7 +117,7 @@ services:
     cap_add:
       - NET_ADMIN
     depends_on:
-
+      - redis
       - php
   proxy:
     image: haproxy:1.7-alpine
