@@ -1,0 +1,10 @@
+2021/02/02 11:29:50 [warn] 9#9: duplicate MIME type "text/html" in /etc/nginx/conf.d/default.conf:16
+2021/02/02 11:34:13 [warn] 9#9: duplicate MIME type "text/html" in /etc/nginx/conf.d/default.conf:16
+2021/02/03 09:32:00 [warn] 10#10: duplicate MIME type "text/html" in /etc/nginx/conf.d/default.conf:16
+2021/02/03 09:50:51 [warn] 9#9: duplicate MIME type "text/html" in /etc/nginx/conf.d/default.conf:16
+2021/02/03 09:54:41 [warn] 9#9: duplicate MIME type "text/html" in /etc/nginx/conf.d/default.conf:16
+2021/02/03 10:04:47 [warn] 9#9: duplicate MIME type "text/html" in /etc/nginx/conf.d/default.conf:16
+2021/02/03 10:07:23 [warn] 9#9: duplicate MIME type "text/html" in /etc/nginx/conf.d/default.conf:16
+2021/02/03 10:17:52 [warn] 9#9: duplicate MIME type "text/html" in /etc/nginx/conf.d/default.conf:16
+2021/02/03 11:14:56 [warn] 8#8: duplicate MIME type "text/html" in /etc/nginx/conf.d/default.conf:16
+2021/02/04 08:53:41 [warn] 10#10: duplicate MIME type "text/html" in /etc/nginx/conf.d/default.conf:16

@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< HEAD
-=======
 use Illuminate\Support\Facades\Broadcast;
 
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
 /*
 |--------------------------------------------------------------------------
 | Broadcast Channels
@@ -16,12 +13,11 @@ use Illuminate\Support\Facades\Broadcast;
 |
 */
 
-<<<<<<< HEAD
-Broadcast::channel('App.User.{id}', function ($user, $id) {
-    return (int) $user->id === (int) $id;
-});
-=======
 Broadcast::channel('App.Models.User.{id}', function ($user, $id) {
     return (int) $user->id === (int) $id;
 });
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
+
+Broadcast::channel('order.{orderId}',function($user,$orderId){
+    //通过返回 true 和 false 来判断用户是否有权收听该频道
+    return $user->id === \App\Models\Order::findOrNew($orderId)->user_id;
+});

@@ -10,16 +10,10 @@ return [
     | This value is the name of your application. This value is used when the
     | framework needs to place the application's name in a notification or
     | any other location as required by the application or its packages.
-<<<<<<< HEAD
-    */
-
-    'name' => env('APPLICATION_NAME') ?: 'PJ Blog',
-=======
     |
     */
 
     'name' => env('APP_NAME', 'Laravel'),
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
 
     /*
     |--------------------------------------------------------------------------
@@ -28,11 +22,7 @@ return [
     |
     | This value determines the "environment" your application is currently
     | running in. This may determine how you prefer to configure various
-<<<<<<< HEAD
-    | services your application utilizes. Set this in your ".env" file.
-=======
     | services the application utilizes. Set this in your ".env" file.
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
     |
     */
 
@@ -62,11 +52,7 @@ return [
     |
     */
 
-<<<<<<< HEAD
-    'url' => env('APP_URL', 'http://pigjian.app'),
-=======
     'url' => env('APP_URL', 'http://localhost'),
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
 
     'asset_url' => env('ASSET_URL', null),
 
@@ -81,11 +67,7 @@ return [
     |
     */
 
-<<<<<<< HEAD
-    'timezone' => env('TIMEZONE') ?: 'UTC',
-=======
     'timezone' => 'UTC',
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
 
     /*
     |--------------------------------------------------------------------------
@@ -98,11 +80,7 @@ return [
     |
     */
 
-<<<<<<< HEAD
-    'locale' => env('LOCALE') ?: 'en',
-=======
-    'locale' => 'en',
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
+    'locale' => 'zh-CN',
 
     /*
     |--------------------------------------------------------------------------
@@ -187,32 +165,19 @@ return [
         /*
          * Package Service Providers...
          */
-<<<<<<< HEAD
-        Laravel\Passport\PassportServiceProvider::class,
-        Laravel\Socialite\SocialiteServiceProvider::class,
-        JellyBool\Translug\TranslugServiceProvider::class,
-        Intervention\Image\ImageServiceProvider::class,
-        Laravel\Tinker\TinkerServiceProvider::class,
-        Jcc\LaravelVote\VoteServiceProvider::class,
-        JellyBool\Flysystem\Upyun\UpyunServiceProvider::class,
-=======
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
 
         /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
+        // websocket广播
+        App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
-<<<<<<< HEAD
         App\Providers\RouteServiceProvider::class,
+        // mongodb
+        Jenssegers\Mongodb\MongodbServiceProvider::class,
 
-=======
-        App\Providers\HorizonServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
-        Hhxsv5\LaravelS\Illuminate\LaravelSServiceProvider::class,
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
     ],
 
     /*
@@ -253,11 +218,7 @@ return [
         'Password' => Illuminate\Support\Facades\Password::class,
         'Queue' => Illuminate\Support\Facades\Queue::class,
         'Redirect' => Illuminate\Support\Facades\Redirect::class,
-<<<<<<< HEAD
-        'Redis' => Illuminate\Support\Facades\Redis::class,
-=======
         // 'Redis' => Illuminate\Support\Facades\Redis::class,
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
         'Request' => Illuminate\Support\Facades\Request::class,
         'Response' => Illuminate\Support\Facades\Response::class,
         'Route' => Illuminate\Support\Facades\Route::class,
@@ -268,13 +229,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-<<<<<<< HEAD
-        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
-        'Translug' => JellyBool\Translug\TranslugFacade::class,
-        'Image' => Intervention\Image\Facades\Image::class,
-=======
+        'Mongo'     => Jenssegers\Mongodb\MongodbServiceProvider::class,
 
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
     ],
 
 ];

@@ -1,0 +1,64 @@
+# MaxScale documentation:
+# https://mariadb.com/kb/en/mariadb-maxscale-24/
+# Global parameters
+# Complete list of configuration options:
+# https://mariadb.com/kb/en/mariadb-maxscale-24-mariadb-maxscale-configuration-guide/
+[maxscale]
+threads=auto
+admin_host=0.0.0.0  #此处为restful api监听需要，默认监听所有网段8989端口
+ms_timestamp=1
+log_info=1
+# Server definitions
+# Set the address of the server to the network
+# address of a MariaDB server.
+
+[server1]
+type=server
+address=172.20.129.5  #主数据库服务器，主要用于数据写入
+port=3306
+protocol=MariaDBBackend
+
+[server2]
+type=server
+address=172.20.129.6#从数据库服务器，主要用于数据读取
+port=3306
+protocol=MariaDBBackend
+
+[MariaDB-Monitor]
+type=monitor
+module=mariadbmon
+servers=server1,server2 #需要添加所有数据库服务器
+user=root
+password=lvyasen123.#数据库的密码
+monitor_interval=1000
+detect_stale_master=true #当master数据库挂掉，使用slave数据库
+
+#[Read-Only-Service] #此处定义只读服务
+#type=service
+#router=readconnroute
+#servers=server1
+#user=myuser
+#password=mypwd
+#router_options=slave
+
+[Read-Write-Service]#此处定义读写分离服务
+type=service
+router=readwritesplit
+servers=server1,server2
+user=root
+password=lvyasen123.
+enable_root_user=1#允许root用户登录
+max_slave_connections=100%
+max_slave_replication_lag=5
+
+#[Read-Only-Listener]#只读服务监听
+#type=listener
+#service=Read-Only-Service
+#protocol=MariaDBClient
+#port=4008
+
+[Read-Write-Listener]#读写服务监听
+type=listener
+service=Read-Write-Service
+protocol=MariaDBClient
+port=4006

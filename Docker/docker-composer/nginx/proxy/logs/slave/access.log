@@ -1,0 +1,5 @@
+172.20.0.2 - - [02/Feb/2021:06:14:27 +0000] "GET / HTTP/1.1" 200 8195 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" "-"
+172.20.0.2 - - [02/Feb/2021:06:14:31 +0000] "GET /admin HTTP/1.1" 302 394 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" "-"
+172.20.0.2 - - [02/Feb/2021:06:14:31 +0000] "GET /admin/login/index HTTP/1.1" 302 394 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" "-"
+172.20.0.2 - - [02/Feb/2021:06:14:31 +0000] "GET /admin/index/index HTTP/1.1" 200 15864 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" "-"
+172.20.0.2 - - [02/Feb/2021:06:14:42 +0000] "GET /admin/index/index HTTP/1.1" 200 15856 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" "-"

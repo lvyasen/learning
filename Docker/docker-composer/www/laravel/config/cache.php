@@ -13,12 +13,6 @@ return [
     | using this caching library. This connection is used when another is
     | not explicitly specified when executing a given caching function.
     |
-<<<<<<< HEAD
-    | Supported: "apc", "array", "database", "file",
-    |            "memcached", "redis", "dynamodb"
-    |
-=======
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
     */
 
     'default' => env('CACHE_DRIVER', 'file'),
@@ -32,12 +26,9 @@ return [
     | well as their drivers. You may even define multiple stores for the
     | same cache driver to group types of items stored in your caches.
     |
-<<<<<<< HEAD
-=======
     | Supported drivers: "apc", "array", "database", "file",
     |            "memcached", "redis", "dynamodb", "null"
     |
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
     */
 
     'stores' => [
@@ -55,10 +46,7 @@ return [
             'driver' => 'database',
             'table' => 'cache',
             'connection' => null,
-<<<<<<< HEAD
-=======
             'lock_connection' => null,
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
         ],
 
         'file' => [
@@ -88,10 +76,7 @@ return [
         'redis' => [
             'driver' => 'redis',
             'connection' => 'cache',
-<<<<<<< HEAD
-=======
             'lock_connection' => 'default',
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
         ],
 
         'dynamodb' => [
@@ -118,8 +103,4 @@ return [
 
     'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_cache'),
 
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8

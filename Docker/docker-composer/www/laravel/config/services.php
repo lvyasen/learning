@@ -30,8 +30,4 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8

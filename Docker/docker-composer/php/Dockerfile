@@ -6,17 +6,19 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # 更新安装依赖包和PHP核心拓展
 RUN apt-get update && apt-get install -y \
-        --no-install-recommends libfreetype6-dev libjpeg62-turbo-dev libpng-dev curl \
+        --no-install-recommends libfreetype6-dev libjpeg62-turbo-dev libpng-dev  curl libzip-dev \
         && rm -r /var/lib/apt/lists/* \
         && docker-php-ext-configure gd \
         && docker-php-ext-configure pcntl \
         && docker-php-ext-install -j$(nproc) gd opcache pdo_mysql gettext sockets
 
-# 安装 PECL 拓展，安装Redis，swoole
+# 安装 PECL 拓展，安装Redis，swoole, xdebug, zip
 RUN pecl install redis \
     && pecl install swoole \
     && pecl install xdebug \
-    && docker-php-ext-enable redis swoole xdebug
+    && pecl install zip \
+    && pecl install mongodb \
+    && docker-php-ext-enable redis mongodb swoole xdebug zip
 
 # 安装 Composer
 ENV COMPOSER_HOME /root/composer
@@ -24,3 +26,4 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 ENV PATH $COMPOSER_HOME/vendor/bin:$PATH
 
 WORKDIR /data
+CMD ["./start.sh"]

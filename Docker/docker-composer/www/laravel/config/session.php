@@ -92,19 +92,12 @@ return [
     | Session Cache Store
     |--------------------------------------------------------------------------
     |
-<<<<<<< HEAD
-    | When using the "apc", "memcached", or "dynamodb" session drivers you may
-    | list a cache store that should be used for these sessions. This value
-    | must match with one of the application's configured cache "stores".
-    |
-=======
     | While using one of the framework's cache driven session backends you may
     | list a cache store that should be used for these sessions. This value
     | must match with one of the application's configured cache "stores".
     |
     | Affects: "apc", "dynamodb", "memcached", "redis"
     |
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
     */
 
     'store' => env('SESSION_STORE', null),
@@ -175,11 +168,7 @@ return [
     |
     */
 
-<<<<<<< HEAD
-    'secure' => env('SESSION_SECURE_COOKIE', null),
-=======
     'secure' => env('SESSION_SECURE_COOKIE'),
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8
 
     /*
     |--------------------------------------------------------------------------
@@ -201,17 +190,6 @@ return [
     |
     | This option determines how your cookies behave when cross-site requests
     | take place, and can be used to mitigate CSRF attacks. By default, we
-<<<<<<< HEAD
-    | do not enable this as other CSRF protection services are in place.
-    |
-    | Supported: "lax", "strict", "none"
-    |
-    */
-
-    'same_site' => null,
-
-];
-=======
     | will set this value to "lax" since this is a secure default value.
     |
     | Supported: "lax", "strict", "none", null
@@ -221,4 +199,3 @@ return [
     'same_site' => 'lax',
 
 ];
->>>>>>> 3a6073f6e867b7c1a5ea710c494f412f26d06fe8

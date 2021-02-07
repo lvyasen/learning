@@ -1,34 +1,26 @@
 version: "3.0"
 networks:
-  lnmp-net:
-    driver: bridge
+  static-network:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+#  lnmp-net:
+#    driver: bridge
 services:
-  nginx:
-    container_name: nginx
-    image: nginx
-    ports:
-     - 80:80
-     - 443:443
-    volumes:
-      - ./www:/usr/share/nginx/html
-      - ./nginx/conf.d:/etc/nginx/conf.d
-      - ./nginx/logs:/var/log/nginx
-    depends_on:
-      - redis
-      - php
-    restart: always
-    networks:
-      - lnmp-net
   php:
     container_name: swoole_php
-    image: swoole_php7
+    image: swoole_php
+#    build:
+#      context: ./php
+#      dockerfile: ./Dockerfile
     volumes:
-      - ./www:/usr/share/nginx/html
+      - ./www:/www
     restart: always
     ports:
-    - 9000:9000
+      - 9000:9000
     networks:
-      - lnmp-net
+      static-network:
+        ipv4_address: 172.20.129.2
   redis:
     container_name: redis
     image: redis
@@ -36,4 +28,185 @@ services:
       - 6379:6379
     restart: always
     networks:
-      - lnmp-net
+      static-network:
+        ipv4_address: 172.20.129.3
+  nginx_master:
+    container_name: nginx_master
+    build:
+      context: ./nginx
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./keepalived/keepalived-master.conf:/etc/keepalived/keepalived.conf
+      - ./nginx/proxy/conf.d:/etc/nginx/conf.d
+      - ./nginx/proxy/logs/master:/var/log/nginx
+    depends_on:
+      - redis
+      - php
+    restart: always
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.2
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - 8001:80
+  nginx_slave_1:
+    container_name: nginx_slave_1
+    build:
+      context: ./nginx
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./www:/www
+      - ./keepalived/keepalived-slave-1.conf:/etc/keepalived/keepalived.conf
+      - ./nginx/proxy/conf.d:/etc/nginx/conf.d
+      - ./nginx/proxy/logs/slave:/var/log/nginx
+    depends_on:
+      - redis
+      - php
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.3
+    cap_add:
+      - NET_ADMIN
+  nginx_web_1:
+    container_name: nginx_web_1
+    build:
+      context: ./nginx
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./www:/www
+      - ./nginx/web/conf.d:/etc/nginx/conf.d
+      - ./nginx/web/logs/web1:/var/log/nginx
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.5
+    cap_add:
+      - NET_ADMIN
+    depends_on:
+      - redis
+      - php
+  nginx_web_2:
+    container_name: nginx_web_2
+    build:
+      context: ./nginx
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./www:/www
+      - ./nginx/web/conf.d:/etc/nginx/conf.d
+      - ./nginx/web/logs/web2:/var/log/nginx
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.6
+    cap_add:
+      - NET_ADMIN
+    depends_on:
+      - redis
+      - php
+  nginx_web_3:
+    container_name: nginx_web_3
+    build:
+      context: ./nginx
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./www:/www
+      - ./nginx/web/conf.d:/etc/nginx/conf.d
+      - ./nginx/web/logs/web3:/var/log/nginx
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.7
+    cap_add:
+      - NET_ADMIN
+    depends_on:
+      - redis
+      - php
+  proxy:
+    image: haproxy:1.7-alpine
+    container_name: haproxy
+    ports:
+      - 80:6301
+    volumes:
+      - ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
+    networks:
+      - static-network
+    depends_on:
+      - nginx_master
+      - nginx_slave_1
+#  es02:
+#    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.2
+#    container_name: es02
+#    environment:
+#      - node.name=es02
+#      - cluster.name=es-docker-cluster
+#      - discovery.seed_hosts=es01
+#      - cluster.initial_master_nodes=es01,es02
+#      - bootstrap.memory_lock=true
+#      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+#    ulimits:
+#      memlock:
+#        soft: -1
+#        hard: -1
+#    volumes:
+#      - ./elaticsearch/data/data02:/usr/share/elasticsearch/data
+#    ports:
+#      - 9201:9201
+#    restart: always
+#    networks:
+#      static-network:
+#        ipv4_address: 172.20.200.2
+#  kib01:
+#    image: docker.elastic.co/kibana/kibana:7.10.2
+#    container_name: kib01
+#    ports:
+#      - 5601:5601
+#    environment:
+#      ELASTICSEARCH_URL: http://172.20.200.1:9200
+#      ELASTICSEARCH_HOSTS: http://172.20.200.1:9200
+#    depends_on:
+#      - es01
+##      - es02
+#    networks:
+#      static-network:
+#        ipv4_address: 172.20.200.3
+#  mysql_master:
+#    image: mysql
+#    container_name: mysql_master
+#    command: --default-authentication-plugin=mysql_native_password
+#    volumes:
+#      - ./mysql/conf.d/master:/etc/mysql/conf.d
+#    environment:
+#      MYSQL_ROOT_PASSWORD: lvyasen123.
+#    restart: always
+#    networks:
+#      static-network:
+#        ipv4_address: 172.20.129.5
+#  mysql_slave:
+#    image: mysql
+#    container_name: mysql_slave
+#    command: >
+#        --default-authentication-plugin=mysql_native_password
+#    volumes:
+#      - ./mysql/conf.d/slave:/etc/mysql/conf.d
+#      - ./mysql/conf.d/slave/init:/docker-entrypoint-initdb.d/
+#    environment:
+#      MYSQL_ROOT_PASSWORD: lvyasen123.
+#    restart: always
+#    networks:
+#      static-network:
+#        ipv4_address: 172.20.129.6
+#    depends_on:
+#      - mysql_master
+#  maxscale:
+#    image: mariadb/maxscale
+#    container_name: maxscale
+#    volumes:
+#      - ./maxscale/my-maxscale.cnf:/etc/maxscale.cnf.d/my-maxscale.cnf
+#    restart: always
+#    ports:
+#      - 4007:4007
+#    networks:
+#      static-network:
+#        ipv4_address: 172.20.129.7
+#    depends_on:
+#      - mysql_master
+#      - mysql_slave
+  # nginx master slave proxy 必须在同一局域网内
